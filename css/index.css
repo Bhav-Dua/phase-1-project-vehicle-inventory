@@ -15,7 +15,15 @@ body {
     margin: 2px;
 }
 
-.container {
+.add-container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background-color: rgb(0, 143, 143);
+}
+
+.search-container {
     padding: 1rem;
     width: stretch;
     height: auto;
