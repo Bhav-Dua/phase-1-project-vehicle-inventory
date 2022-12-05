@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+#vehicle-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 143, 143);
+    height: 4rem;
+    padding: 1rem;
+}
+
+#vehicle-collection {
+    margin: 2px;
+}
+
+.container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background-color: rgb(0, 143, 143);
+}
