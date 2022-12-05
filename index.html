@@ -9,5 +9,53 @@
         <div id="vehicle-header">
             <h1>Vehicle Inventory</h1> 
         </div>
+
+        <div class="container">
+            <form class="add-vehicle">
+                <h3>Add Vehicle!</h3>
+
+                <label for="make">Make</label>
+                <input 
+                type="text"
+                name="make"
+                placeholder="Enter vehicle's make"
+                class="input-text"
+                />
+                <br />
+                <label for="model">Model</label>
+                <input 
+                type="text"
+                name="model"
+                placeholder="Enter vehicle's model"
+                class="input-text"
+                />
+                <br />
+                <label for="milege">Mileage</label>
+                <input 
+                type="text"
+                name="mileage"
+                placeholder="Enter vehicle's make"
+                class="input-text"
+                />
+                <br />
+                <label for="vin">VIN</label>
+                <input 
+                type="text"
+                name="vin"
+                placeholder="Enter vehicle's VIN number"
+                class="input-text"
+                />
+                <br />
+                <input type="submit" 
+                name="submit"
+                value="Create Toy"
+                class="submit"
+                />
+            </form>
+        </div>
+        <p style="text-align: center;"><button>Add Vehicle</button></p>
+
+        <div id="vehicle-collection"></div>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
