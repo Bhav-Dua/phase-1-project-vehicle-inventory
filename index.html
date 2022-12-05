@@ -10,7 +10,7 @@
             <h1>Vehicle Inventory</h1> 
         </div>
 
-        <div class="container">
+        <div class="add-container">
             <form class="add-vehicle">
                 <h3>Add Vehicle!</h3>
 
@@ -53,7 +53,29 @@
                 />
             </form>
         </div>
-        <p style="text-align: center;"><button>Add Vehicle</button></p>
+
+        <div class="search-container">
+            <form class="search-vehicle">
+                <h3>Search using VIN number</h3>
+
+                <label for="search">Vin #</label>
+                <input 
+                type="text" 
+                name="search"
+                placeholder="Enter vehicle's VIN number"
+                >
+                <input 
+                type="submit"
+                value="Search"
+                class="submit">
+            </form>
+            <button style="margin-top: 25px; margin-left: 20px;">Clear results</button>
+        </div>
+
+        <p style="text-align: center;">
+            <button style="margin-right: 20px;">Add Vehicle</button>
+            <button style="margin-right: 20px;">Search by VIN</button>
+        </p>
 
         <div id="vehicle-collection"></div>
         <script type="text/javascript" src="js/index.js"></script>
