@@ -15,3 +15,15 @@ document.querySelector('#adding').addEventListener('click', () => {
         addContainer.style.display = 'none';
     }
 })
+
+document.querySelector('#searching').addEventListener('click', () => {
+    searchVehicle = !searchVehicle;
+    if (searchVehicle) {
+        addVehicle = false;
+        addContainer.style.display = 'none';
+        searchContainer.style.display = 'block';
+    }
+    else {
+        searchContainer.style.display = 'none';
+    }
+})
