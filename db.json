@@ -2,8 +2,10 @@
   "vehicles": [
     {
       "id": 1,
+      "year": "2019",
       "make": "Mercedes",
-      "model": "GT63"
+      "model": "GT63",
+      "vin": "WDD7X8JB0KA006036"
     }
   ]
 }
