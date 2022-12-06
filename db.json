@@ -1,0 +1,9 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "make": "Mercedes",
+      "model": "GT63"
+    }
+  ]
+}
