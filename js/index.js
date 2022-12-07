@@ -1,5 +1,5 @@
-let addVehicle = false;
-let searchVehicle = false;
+let addMenu = false;
+let searchMenu = false;
 
 const addContainer = document.querySelector('.add-container');
 const searchContainer = document.querySelector('.search-container');
@@ -7,9 +7,9 @@ const searchContainer = document.querySelector('.search-container');
 document.addEventListener('DOMContentLoaded', loadAllVehicles)
 
 document.querySelector('#adding').addEventListener('click', () => {
-    addVehicle = !addVehicle;
-    if (addVehicle) {
-        searchVehicle = false;
+    addMenu = !addMenu;
+    if (addMenu) {
+        searchMenu = false;
         searchContainer.style.display = 'none';
         addContainer.style.display = 'block';
     }
@@ -19,9 +19,9 @@ document.querySelector('#adding').addEventListener('click', () => {
 })
 
 document.querySelector('#searching').addEventListener('click', () => {
-    searchVehicle = !searchVehicle;
-    if (searchVehicle) {
-        addVehicle = false;
+    searchMenu = !searchMenu;
+    if (searchMenu) {
+        addMenu = false;
         addContainer.style.display = 'none';
         searchContainer.style.display = 'block';
     }
