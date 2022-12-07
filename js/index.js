@@ -63,8 +63,26 @@ function createCard(vehicle) {
     document.querySelector('#vehicle-collection').appendChild(div);
 }
 
+function addVehicle(e) {
+    fetch('http://localhost:3000/vehicles', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            'year': document.querySelectorAll('.input-text')[0].value,
+            'make': document.querySelectorAll('.input-text')[1].value,
+            'model': document.querySelectorAll('.input-text')[2].value,
+            'miles': document.querySelectorAll('.input-text')[3].value,
+            'vin': document.querySelectorAll('.input-text')[4].value
+        })
+    })
+    .then(resp => resp.json())
+    .then(json => createCard(json))
+}
+
 function handleDelete(id) {
-    fetch(`http://localhost:3000/vehicles/${id}`,{
+    fetch(`http://localhost:3000/vehicles/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
