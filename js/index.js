@@ -97,3 +97,11 @@ function handleDelete(id) {
         }
     })
 }
+
+function searchVehicle(vin) {
+    document.querySelector('#vehicle-collection').replaceChildren();
+
+    fetch('http://localhost:3000/vehicles')
+    .then(resp => resp.json())
+    .then(json => createCard(json.find(vehicle => vehicle.vin === vin)));
+}
