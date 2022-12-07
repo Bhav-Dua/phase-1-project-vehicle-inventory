@@ -33,3 +33,24 @@ document.querySelector('#searching').addEventListener('click', () => {
         searchContainer.style.display = 'none';
     }
 })
+
+function createCard(vehicle) {
+    const div = document.createElement('div');
+    const h2 = document.createElement('h2');
+    const h3 = document.createElement('h3');
+    const p = document.createElement('p');
+    const btn = document.createElement('button');
+
+    div.classList.add('card');
+    h2.textContent = vehicle.make;
+    h3.textContent = vehicle.model;
+    p.textContent = vehicle.vin;
+    btn.textContent = 'Remove';
+    btn.addEventListener('click', handleDelete);
+
+    div.appendChild(h2);
+    div.appendChild(h3);
+    div.appendChild(p);
+    div.appendChild(btn);
+    document.querySelector('#vehicle-collection').appendChild(div);
+}
