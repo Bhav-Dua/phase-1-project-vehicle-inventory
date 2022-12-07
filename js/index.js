@@ -60,7 +60,7 @@ function createCard(vehicle) {
     const btn = document.createElement('button');
 
     div.classList.add('card');
-    h2.textContent = vehicle.make;
+    h2.textContent = `${vehicle.year} ${vehicle.make}`;
     h3.textContent = vehicle.model;
     p.textContent = vehicle.vin;
     btn.textContent = 'Remove';
