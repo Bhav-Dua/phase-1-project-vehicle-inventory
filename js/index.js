@@ -30,6 +30,9 @@ document.querySelector('#searching').addEventListener('click', () => {
     }
 })
 
+document.querySelector('.add-vehicle').addEventListener('submit', addVehicle);
+document.querySelector('.search-vehicle').addEventListener('submit', searchVehicle);
+
 function loadAllVehicles() {
     fetch('http://localhost:3000/vehicles')
     .then(resp => resp.json())
