@@ -37,7 +37,7 @@ document.querySelector('.add-vehicle').addEventListener('submit', e => {
 });
 document.querySelector('.search-vehicle').addEventListener('submit', e => {
     e.preventDefault();
-    searchVehicle(e);
+    searchVehicle(e.target[0].value);
     e.target.reset();
 });
 
