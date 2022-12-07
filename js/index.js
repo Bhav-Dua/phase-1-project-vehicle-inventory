@@ -110,3 +110,8 @@ function searchVehicle(vin) {
     .then(resp => resp.json())
     .then(json => createCard(json.find(vehicle => vehicle.vin === vin)));
 }
+
+function clearResults() {
+    document.querySelector('#vehicle-collection').replaceChildren();
+    loadAllVehicles();
+}
