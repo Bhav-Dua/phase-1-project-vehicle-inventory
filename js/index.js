@@ -4,11 +4,7 @@ let searchVehicle = false;
 const addContainer = document.querySelector('.add-container');
 const searchContainer = document.querySelector('.search-container');
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/vehicles')
-    .then(resp => resp.json())
-    .then(json => json.forEach(vehicle => createCard(vehicle)));
-})
+document.addEventListener('DOMContentLoaded', loadAllVehicles)
 
 document.querySelector('#adding').addEventListener('click', () => {
     addVehicle = !addVehicle;
@@ -33,6 +29,12 @@ document.querySelector('#searching').addEventListener('click', () => {
         searchContainer.style.display = 'none';
     }
 })
+
+function loadAllVehicles() {
+    fetch('http://localhost:3000/vehicles')
+    .then(resp => resp.json())
+    .then(json => json.forEach(vehicle => createCard(vehicle)));
+}
 
 function createCard(vehicle) {
     const div = document.createElement('div');
