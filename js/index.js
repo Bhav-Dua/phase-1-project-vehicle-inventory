@@ -4,7 +4,7 @@ let searchMenu = false;
 const addContainer = document.querySelector('.add-container');
 const searchContainer = document.querySelector('.search-container');
 
-document.addEventListener('DOMContentLoaded', loadAllVehicles)
+document.addEventListener('DOMContentLoaded', loadAllVehicles);
 
 document.querySelector('#adding').addEventListener('click', () => {
     addMenu = !addMenu;
@@ -16,7 +16,7 @@ document.querySelector('#adding').addEventListener('click', () => {
     else {
         addContainer.style.display = 'none';
     }
-})
+});
 
 document.querySelector('#searching').addEventListener('click', () => {
     searchMenu = !searchMenu;
@@ -28,17 +28,22 @@ document.querySelector('#searching').addEventListener('click', () => {
     else {
         searchContainer.style.display = 'none';
     }
-})
+});
 
 document.querySelector('.add-vehicle').addEventListener('submit', e => {
     e.preventDefault();
     addVehicle(e);
     e.target.reset();
 });
+
 document.querySelector('.search-vehicle').addEventListener('submit', e => {
     e.preventDefault();
     searchVehicle(e.target[0].value);
     e.target.reset();
+});
+
+document.addEventListener('keydown', e => {
+    if (e.key === "Escape") clearResults();
 });
 
 function loadAllVehicles() {
