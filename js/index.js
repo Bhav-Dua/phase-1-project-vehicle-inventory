@@ -46,11 +46,23 @@ function createCard(vehicle) {
     h3.textContent = vehicle.model;
     p.textContent = vehicle.vin;
     btn.textContent = 'Remove';
-    btn.addEventListener('click', handleDelete);
+    btn.addEventListener('click', () => {
+        handleDelete(vehicle.id);
+        div.remove();
+    });
 
     div.appendChild(h2);
     div.appendChild(h3);
     div.appendChild(p);
     div.appendChild(btn);
     document.querySelector('#vehicle-collection').appendChild(div);
+}
+
+function handleDelete(id) {
+    fetch(`http://localhost:3000/vehicles/${id}`,{
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
 }
