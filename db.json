@@ -1,12 +1,44 @@
 {
   "vehicles": [
     {
-      "id": 1,
-      "year": "2019",
+      "year": "2022",
       "make": "Mercedes",
-      "model": "GT63",
-      "miles": "2041",
-      "vin": "WDD7X8JB0KA006036"
+      "model": "GT 63s",
+      "miles": "208",
+      "vin": "WDD7X8JB0KA006036",
+      "id": 1
+    },
+    {
+      "year": "2003",
+      "make": "Honda ",
+      "model": "Accord",
+      "miles": "167755",
+      "vin": "JHMCM56603C067824",
+      "id": 2
+    },
+    {
+      "year": "2014",
+      "make": "Ferrari",
+      "model": "LaFerrari",
+      "miles": "980",
+      "vin": "ZFF76ZFA6E0207440",
+      "id": 3
+    },
+    {
+      "year": "2023",
+      "make": "BMW",
+      "model": "M8",
+      "miles": "8",
+      "vin": "WBSAE0C00PCK95703",
+      "id": 4
+    },
+    {
+      "year": "2020",
+      "make": "Lamborghini",
+      "model": "Aventador SVJ",
+      "miles": "205",
+      "vin": "ZHWUM6ZD7LLA09029",
+      "id": 5
     }
   ]
 }
