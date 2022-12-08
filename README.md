@@ -4,7 +4,7 @@ This project is a one page web application for storing vehicles.
 
 ## Description
 
-This web application allows you to add and remove vehicles from the inventory, search for them by VIN number, as well as filter them by make/model
+This web application allows you to add and remove vehicles from the inventory, and search for them by VIN number
 
 ## Roadmap
 
